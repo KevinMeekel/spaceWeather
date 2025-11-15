@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "lib": ["ES2017", "DOM"],
+        "types": ["node"]
+    },
+    "include": ["src/**/*"]
+}

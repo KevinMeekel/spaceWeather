@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>NASA Space Weather</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>NASA Space Weather (Last 7 Days)</h1>
+
+        <div class="page-container">
+            <section id="flares-section">
+                <h2>Solar Flares</h2>
+                <div id="flare-controls">
+                    <label>
+                        Sort by:
+                        <select id="flare-sort">
+                            <option value="time-newest">
+                                Time — newest first
+                            </option>
+                            <option value="time-oldest">
+                                Time — oldest first
+                            </option>
+                            <option value="class-highest">
+                                Class — highest first
+                            </option>
+                            <option value="class-lowest">
+                                Class — lowest first
+                            </option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="flares"></div>
+            </section>
+
+            <section id="cmes-section">
+                <h2>Coronal Mass Ejections</h2>
+                <div id="cme-controls">
+                    <label>
+                        Sort by:
+                        <select id="cme-sort">
+                            <option value="time-newest">
+                                Time — newest first
+                            </option>
+                            <option value="time-oldest">
+                                Time — oldest first
+                            </option>
+                            <option value="speed-highest">
+                                Speed — highest first
+                            </option>
+                            <option value="speed-lowest">
+                                Speed — lowest first
+                            </option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="cmes"></div>
+            </section>
+
+            <section id="gsts-section">
+                <h2>Geomagnetic Storms</h2>
+                <div id="gst-controls">
+                    <label>
+                        Sort by:
+                        <select id="gst-sort">
+                            <option value="time-newest">
+                                Time — newest first
+                            </option>
+                            <option value="time-oldest">
+                                Time — oldest first
+                            </option>
+                            <option value="kp-highest">
+                                KP Index — highest first
+                            </option>
+                            <option value="kp-lowest">
+                                KP Index — lowest first
+                            </option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="gsts"></div>
+            </section>
+        </div>
+
+        <script>
+            function formatDateTime(iso) {
+                if (!iso) return "Unknown";
+                const d = new Date(iso);
+
+                const day = d.getDate();
+                const month = d.toLocaleString("nl-NL", { month: "long" });
+                const year = d.getFullYear();
+
+                const hours = String(d.getHours()).padStart(2, "0");
+                const minutes = String(d.getMinutes()).padStart(2, "0");
+
+                return `${day} ${month} ${year}, ${hours}:${minutes} UTC`;
+            }
+
+            async function loadData() {
+                const res = await fetch("./data/spaceWeather.json");
+                const data = await res.json();
+
+                const flares = document.getElementById("flares");
+                const cmes = document.getElementById("cmes");
+                const gsts = document.getElementById("gsts");
+
+                let flareData = data.flares;
+                let cmeData = data.cmes;
+                let gstData = data.gsts;
+
+                const sortSelect = document.getElementById("flare-sort");
+                const cmeSort = document.getElementById("cme-sort");
+                const gstSort = document.getElementById("gst-sort");
+
+                // RENDER FLARES FUNCTION
+                function renderFlares() {
+                    const mode = sortSelect.value;
+
+                    let sorted = [...flareData];
+
+                    if (mode === "time-newest") {
+                        sorted.sort(
+                            (a, b) =>
+                                new Date(b.peakTime) - new Date(a.peakTime)
+                        );
+                    }
+                    if (mode === "time-oldest") {
+                        sorted.sort(
+                            (a, b) =>
+                                new Date(a.peakTime) - new Date(b.peakTime)
+                        );
+                    }
+                    if (mode === "class-highest") {
+                        sorted.sort(
+                            (a, b) =>
+                                flareClassValue(b.classType) -
+                                flareClassValue(a.classType)
+                        );
+                    }
+                    if (mode === "class-lowest") {
+                        sorted.sort(
+                            (a, b) =>
+                                flareClassValue(a.classType) -
+                                flareClassValue(b.classType)
+                        );
+                    }
+
+                    flares.innerHTML = sorted.length
+                        ? sorted
+                              .map(
+                                  (f) =>
+                                      `<div class="card">
+                                        <strong>${
+                                            f.classType || "Unknown class"
+                                        }</strong>
+                                        <p>Peak: ${formatDateTime(
+                                            f.peakTime
+                                        )}</p>
+                                        <p>Location: ${
+                                            f.sourceLocation || "Unknown"
+                                        }</p>
+                                    </div>`
+                              )
+                              .join("")
+                        : "<p>No flares reported.</p>";
+                }
+                // RENDER FLARES FUNCTION END
+
+                // RENDER CMEs FUNCTION
+                function renderCMEs() {
+                    const mode = cmeSort.value;
+                    let sorted = [...cmeData];
+
+                    if (mode === "time-newest") {
+                        sorted.sort(
+                            (a, b) =>
+                                new Date(b.startTime) - new Date(a.startTime)
+                        );
+                    }
+                    if (mode === "time-oldest") {
+                        sorted.sort(
+                            (a, b) =>
+                                new Date(a.startTime) - new Date(b.startTime)
+                        );
+                    }
+                    if (mode === "speed-highest") {
+                        sorted.sort((a, b) => getCmeSpeed(b) - getCmeSpeed(a));
+                    }
+                    if (mode === "speed-lowest") {
+                        sorted.sort((a, b) => getCmeSpeed(a) - getCmeSpeed(b));
+                    }
+
+                    cmes.innerHTML = sorted.length
+                        ? sorted
+                              .map(
+                                  (c) =>
+                                      `<div class="card">
+                                    <strong>${getCmeSpeed(c)} km/s</strong>
+                                    <p>Date: ${formatDateTime(c.startTime)}</p>
+                                    </div>`
+                              )
+                              .join("")
+                        : "<p>No CMEs reported.</p>";
+                }
+                // RENDER CMEs FUNCTION END
+
+                // RENDER GSTs FUNCTION
+                function renderGSTs() {
+                    const mode = gstSort.value;
+                    let sorted = [...gstData];
+
+                    if (mode === "time-newest") {
+                        sorted.sort(
+                            (a, b) =>
+                                new Date(b.startTime) - new Date(a.startTime)
+                        );
+                    }
+                    if (mode === "time-oldest") {
+                        sorted.sort(
+                            (a, b) =>
+                                new Date(a.startTime) - new Date(b.startTime)
+                        );
+                    }
+                    if (mode === "kp-highest") {
+                        sorted.sort((a, b) => getKpIndex(b) - getKpIndex(a));
+                    }
+                    if (mode === "kp-lowest") {
+                        sorted.sort((a, b) => getKpIndex(a) - getKpIndex(b));
+                    }
+
+                    gsts.innerHTML = sorted.length
+                        ? sorted
+                              .map(
+                                  (g) =>
+                                      `<div class="card">
+                                    <strong>KP Index: ${getKpIndex(g)}</strong>
+                                    <p>Start: ${formatDateTime(g.startTime)}</p>
+                                    </div>`
+                              )
+                              .join("")
+                        : "<p>No geomagnetic storms reported.</p>";
+                }
+                // RENDER GSTs FUNCTION END
+
+                // Initial render
+                renderFlares();
+                renderCMEs();
+                renderGSTs();
+
+                // Re-render on selection change
+                sortSelect.addEventListener("change", renderFlares);
+                cmeSort.addEventListener("change", renderCMEs);
+                gstSort.addEventListener("change", renderGSTs);
+            }
+            // loadData END
+
+            // Magnitude functions
+            function flareClassValue(classType) {
+                if (!classType) return 0;
+                const scale = { A: 1, B: 2, C: 3, M: 4, X: 5 };
+                const letter = classType[0];
+                const number = parseFloat(classType.slice(1)) || 0;
+                return scale[letter] * 100 + number;
+            }
+
+            function getCmeSpeed(cme) {
+                const analysis = cme.cmeAnalyses?.[0];
+                return analysis?.speed || 0; // speed in km/s
+            }
+
+            function getKpIndex(gst) {
+                return gst.allKpIndex?.[0]?.kpIndex || 0;
+            }
+
+            //Execute
+            loadData();
+        </script>
+    </body>
+</html>

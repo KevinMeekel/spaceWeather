@@ -1,0 +1,44 @@
+name: Daily Space Weather Data Update
+
+on:
+    schedule:
+        # Runs at 00:00 UTC every day.
+        - cron: "0 0 * * *"
+    workflow_dispatch:
+        # Allows manual running of the workflow from the Actions tab
+
+jobs:
+    update-data:
+        runs-on: ubuntu-latest
+        steps:
+            - name: ⬇️ Checkout Repository
+              uses: actions/checkout@v4
+
+            - name: ⚙️ Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20" # Use a stable Node.js version
+
+            - name: 📦 Install Dependencies
+              # This will install packages listed in package.json,
+              # including the crucial 'ts-node' and 'typescript'
+              run: npm install
+
+            - name: 🏃 Run Data Fetch Script with ts-node
+              # **CRITICAL:** Use ts-node to execute the TypeScript file directly.
+              # Note: 'ts-node' must be listed as a dependency (devDependency is fine) in your package.json.
+              run: npx ts-node src/api/fetchAllSpaceWeather.ts 7
+
+            - name: 📝 Check for Data Changes
+              # This step checks if the public/data/spaceWeather.json file was modified.
+              id: git_status
+              run: echo "changes=$(git status --porcelain public/data/spaceWeather.json | wc -l)" >> $GITHUB_OUTPUT
+
+            - name: 💾 Commit and Push Updated Data
+              # Only runs if the file changed (changes > 0)
+              if: steps.git_status.outputs.changes > 0
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                  commit_message: "chore: Auto-update space weather data (daily run)"
+                  file_pattern: "public/data/spaceWeather.json"
+                  branch: ${{ github.ref_name }}

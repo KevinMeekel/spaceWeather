@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>NASA Space Weather</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/space/public/style.css" />
     </head>
     <body>
         <h1>NASA Space Weather (Last 7 Days)</h1>
@@ -101,7 +101,7 @@
             }
 
             async function loadData() {
-                const res = await fetch("./data/spaceWeather.json");
+                const res = await fetch("./public/data/spaceWeather.json");
                 const data = await res.json();
 
                 const flares = document.getElementById("flares");

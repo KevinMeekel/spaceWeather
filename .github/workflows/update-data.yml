@@ -24,6 +24,9 @@ jobs:
               # including the crucial 'ts-node' and 'typescript'
               run: npm install
 
+            - name: 🛠 Fix ts-node permissions (Linux)
+              run: chmod +x ./node_modules/.bin/ts-node
+
             - name: 🏃 Run Data Fetch Script
               # **NEW COMMAND:** Runs the script defined in package.json
               run: npm run fetch:data -- 7

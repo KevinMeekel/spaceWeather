@@ -24,10 +24,9 @@ jobs:
               # including the crucial 'ts-node' and 'typescript'
               run: npm install
 
-            - name: 🏃 Run Data Fetch Script with ts-node
-              # **CRITICAL:** Use ts-node to execute the TypeScript file directly.
-              # Note: 'ts-node' must be listed as a dependency (devDependency is fine) in your package.json.
-              run: npx ts-node src/api/fetchAllSpaceWeather.ts 7
+            - name: 🏃 Run Data Fetch Script
+              # **NEW COMMAND:** Runs the script defined in package.json
+              run: npm run fetch:data -- 7
 
             - name: 📝 Check for Data Changes
               # This step checks if the public/data/spaceWeather.json file was modified.

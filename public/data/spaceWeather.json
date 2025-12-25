@@ -70,304 +70,6 @@
   ],
   "cmes": [
     {
-      "activityID": "2025-12-17T00:30:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2025-12-17T00:30Z",
-      "instruments": [
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "Faint less than 10 degree half-width CME observed to the W only in GOES CCOR-1, due to a data gap in SOHO LASCO C2/C3 and STEREO A COR2. The source may be field line movement on/just beyond the W limb as early as 2025-12-16T22:24Z in GOES SUVI 171.",
-      "submissionTime": "2025-12-17T02:29Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43507/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2025-12-17T04:08Z",
-          "latitude": -9,
-          "longitude": null,
-          "halfAngle": 10,
-          "speed": 873,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "Plane-of-sky",
-          "note": "Plane-of-sky with GOES CCOR-1 only, due to the unknown source longitude and being the only coronagraph observing this faint front due to a SOHO LASCO C2/C3 and STEREO A COR2 data gap. The front has a less than 10 degree half-width.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2025-12-17T02:32Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43508/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2025-12-17T02:23:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2025-12-17T02:23Z",
-      "instruments": [
-        {
-          "displayName": "STEREO A: SECCHI/COR2"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "This CME is visible to the north in GOES CCOR-1 and to the northwest in STEREO A COR2 imagery. This event is not seen in real-time by SOHO LASCO C2/C3 due to a planned data gap between downlink periods from 2025-12-16T12:00Z to 2025-12-17T10:36Z. The source is a large far-sided filament eruption observed over the northern limb in GOES SUVI 131/171/195/284/304 and SDO AIA 131/171/193/304 imagery which begins to lift off around 2025-12-17T02:00Z. This eruption is observed as a far-sided eruption visible over the northwestern limb in STEREO A EUVI 195/304 imagery.",
-      "submissionTime": "2025-12-17T13:00Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43509/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2025-12-17T11:09Z",
-          "latitude": 61,
-          "longitude": 166,
-          "halfAngle": 42,
-          "speed": 419,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on the best fit between STEREO A COR2 and GOES CCOR-1 imagery. As the source is far-sided and a precise source location is unknown, the measured parameters may vary slightly.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 11.9,
-          "submissionTime": "2025-12-17T13:08Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43510/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2025-12-17T07:15:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2025-12-17T07:15Z",
-      "instruments": [
-        {
-          "displayName": "GOES: CCOR-1"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "This CME is visible to the northeast in GOES CCOR-1 and SOHO LASCO C3 imagery, and to the north in STEREO A COR2 imagery. This event is seen following a data gap in real-time by SOHO LASCO C2/C3 starting at 2025-12-17T10:36Z. The source is likely far-sided and may be related to faint field line movement visible over the northeast limb in GOES SUVI 284 imagery starting around 2025-12-17T06:00Z.",
-      "submissionTime": "2025-12-17T13:50Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43511/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2025-12-17T16:24Z",
-          "latitude": 49,
-          "longitude": -133,
-          "halfAngle": 27,
-          "speed": 358,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on the best fit between SOHO LASCO C3 and STEREO A COR2 imagery. Due to the far-sided and therefore unknown source location, the measured parameters may vary slightly.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 13.2,
-          "submissionTime": "2025-12-17T13:55Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43512/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2025-12-17T11:24:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2025-12-17T11:24Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "This CME is visible to the northeast in SOHO LASCO C2 and GOES CCOR-1 imagery. This event is not seen in STEREO A COR2 imagery. The source is likely far-sided as there are no source signatures on the Earth-facing disk around the time of this event.",
-      "submissionTime": "2025-12-17T16:36Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43514/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2025-12-17T21:02Z",
-          "latitude": 37,
-          "longitude": null,
-          "halfAngle": 29,
-          "speed": 348,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "Plane-of-sky",
-          "note": "A plane-of-sky measurement was made using a longitude of -90 degrees due to the far-sided and therefore unknown source location.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 7.5,
-          "submissionTime": "2025-12-17T16:38Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43515/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2025-12-17T13:45:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2025-12-17T13:45Z",
-      "instruments": [
-        {
-          "displayName": "GOES: CCOR-1"
-        },
-        {
-          "displayName": "STEREO A: SECCHI/COR2"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "This CME is visible to the north in GOES CCOR-1 and to the northwest in STEREO A COR2 imagery. This event is not seen in real-time by SOHO LASCO C2/C3 imagery due to a planned data gap between downlink periods from 2025-12-17T11:48Z to 16:00Z. The source for this event is likely far-sided as there are no source signatures visible on the Earth-facing disk around the time of this event.",
-      "submissionTime": "2025-12-17T16:42Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43516/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2025-12-17T21:08Z",
-          "latitude": 63,
-          "longitude": 160,
-          "halfAngle": 17,
-          "speed": 414,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on the best fit between STEREO A COR2 and GOES CCOR-1 coronagraph imagery.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 8.2,
-          "submissionTime": "2025-12-17T16:44Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43517/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2025-12-17T18:15:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2025-12-17T18:15Z",
-      "instruments": [
-        {
-          "displayName": "GOES: CCOR-1"
-        },
-        {
-          "displayName": "STEREO A: SECCHI/COR2"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "Wide CME seen to the northeast in GOES CCOR-1 and to the northwest in STEREO A COR2 for one frame. Not visible in SOHO LASCO C2/C3 in real-time due to a data gap. Likely associated with far-sided eruptive activity relative to the Earth-Sun line; it is not associated with any eruptive signatures on the Earth facing disk as seen in available SDO AIA and GOES SUVI EUV imagery. The eruptive signature was also not seen in STEREO A EUV imagery.",
-      "submissionTime": "2025-12-18T13:11Z",
-      "versionId": 2,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43520/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2025-12-17T22:35Z",
-          "latitude": 53,
-          "longitude": -148,
-          "halfAngle": 25,
-          "speed": 743,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Leading edge measurement using one available frame of STEREO A COR2A imagery where the CME appears more narrow than in GOES CCOR-1; the CME width may be slightly wider in reality.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 12,
-          "submissionTime": "2025-12-17T21:09Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43521/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2025-12-17T20:36:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2025-12-17T20:36Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "Faint CME observed to the SE only in SOHO LASCO C2, and even more faint in LASCO C3; not seen in STEREO A COR2 due to a data gap beginning at 2025-12-17T20:38Z, nor in GOES CCOR-1 likely due to faintness. The source may be weak/slow field line movement observed over the SE limb starting around 2025-12-17T18:15Z in SDO AIA 171, which appears to be far-sided in origin.",
-      "submissionTime": "2025-12-18T12:46Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43522/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2025-12-18T09:13Z",
-          "latitude": -43,
-          "longitude": null,
-          "halfAngle": 27,
-          "speed": 286,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "Plane-of-sky",
-          "note": "SOHO LASCO C2/C3 only plane-of-sky due to the uncertain, likely far-sided, source with no STEREO A COR2 to triangulate with. CME front fades after a few C2 frames, and is near unresolvable in later C3 frames.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2025-12-18T12:47Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43523/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
       "activityID": "2025-12-18T02:12:00-CME-001",
       "catalog": "M2M_CATALOG",
       "startTime": "2025-12-18T02:12Z",
@@ -1305,6 +1007,46 @@
               ]
             }
           ]
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2025-12-24T10:36:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2025-12-24T10:36Z",
+      "instruments": [
+        {
+          "displayName": "SOHO: LASCO/C2"
+        }
+      ],
+      "sourceLocation": "",
+      "activeRegionNum": null,
+      "note": "Very faint and narrow CME first seen to the SSE by SOHO LASCO C2 beginning at 2025-12-24T10:36Z. This event is not clearly seen in any other coronagraphs. There is no clear source seen for this CME.",
+      "submissionTime": "2025-12-24T16:24Z",
+      "versionId": 1,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/43580/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2025-12-24T21:51Z",
+          "latitude": -56,
+          "longitude": null,
+          "halfAngle": 10,
+          "speed": 306,
+          "type": "S",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "Plane-of-sky",
+          "note": "Plane-of-sky measurement due to uncertain source and lack of usable coronagraph imagery. Measurement made using SOHO LASCO C2 only.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": null,
+          "submissionTime": "2025-12-24T16:25Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/43581/-1",
+          "enlilList": []
         }
       ],
       "linkedEvents": null,

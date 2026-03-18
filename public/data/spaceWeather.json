@@ -1,31 +1,6 @@
 {
   "flares": [
     {
-      "flrID": "2026-03-10T11:22:00-FLR-001",
-      "catalog": "M2M_CATALOG",
-      "instruments": [
-        {
-          "displayName": "GOES-P: EXIS 1.0-8.0"
-        }
-      ],
-      "beginTime": "2026-03-10T11:22Z",
-      "peakTime": "2026-03-10T12:04Z",
-      "endTime": "2026-03-10T12:20Z",
-      "classType": "C2.4",
-      "sourceLocation": "N13E70",
-      "activeRegionNum": 14389,
-      "note": "",
-      "submissionTime": "2026-03-10T16:37Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/FLR/45021/-1",
-      "linkedEvents": [
-        {
-          "activityID": "2026-03-10T12:24:00-CME-001"
-        }
-      ],
-      "sentNotifications": null
-    },
-    {
       "flrID": "2026-03-13T09:40:00-FLR-001",
       "catalog": "M2M_CATALOG",
       "instruments": [
@@ -120,306 +95,34 @@
         }
       ],
       "sentNotifications": null
+    },
+    {
+      "flrID": "2026-03-17T08:55:00-FLR-001",
+      "catalog": "M2M_CATALOG",
+      "instruments": [
+        {
+          "displayName": "GOES-S: EXIS 1.0-8.0"
+        }
+      ],
+      "beginTime": "2026-03-17T08:55Z",
+      "peakTime": "2026-03-17T09:04Z",
+      "endTime": "2026-03-17T09:09Z",
+      "classType": "M1.3",
+      "sourceLocation": "S14E10",
+      "activeRegionNum": 14392,
+      "note": "",
+      "submissionTime": "2026-03-17T11:13Z",
+      "versionId": 2,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/FLR/45115/-1",
+      "linkedEvents": [
+        {
+          "activityID": "2026-03-17T10:53:00-CME-001"
+        }
+      ],
+      "sentNotifications": null
     }
   ],
   "cmes": [
-    {
-      "activityID": "2026-03-10T02:24:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-10T02:24Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "S25E90",
-      "activeRegionNum": null,
-      "note": "CME first seen to the Southeast in SOHO LASCO C2 beginning at 2026-03-10T02:24Z, as well as by SOHO LASCO C3 and GOES CCOR-1 in later frames. This CME is not visible in STEREO A COR2 due to a data gap from 2026-03-09T13:09Z to 2026-03-10T04:09Z. The source of this event is a small filament eruption seen along the SE limb (approx. S25E90) in GOES SUVI 304 with liftoff beginning at approx. 2026-03-10T01:57Z. A small region of field line opening is seen in association with this eruption in GOES SUVI 195.",
-      "submissionTime": "2026-03-10T11:45Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45014/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-10T09:04Z",
-          "latitude": -10,
-          "longitude": -90,
-          "halfAngle": 13,
-          "speed": 544,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Updated measurement based on the approximate source location.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 6.6,
-          "submissionTime": "2026-03-11T17:42Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45036/-1",
-          "enlilList": []
-        },
-        {
-          "isMostAccurate": false,
-          "time21_5": "2026-03-10T09:15Z",
-          "latitude": -13,
-          "longitude": null,
-          "halfAngle": 10,
-          "speed": 533,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "Plane-of-sky",
-          "note": "Plane-of-sky due to source along the limb and lack of STEREO A to triangulate. Measurement based on approximate source location and best fit in SOHO LASCO C2/C3 and GOES CCOR-1.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-10T11:47Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45015/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2026-03-10T04:48:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-10T04:48Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        }
-      ],
-      "sourceLocation": "N25E63",
-      "activeRegionNum": null,
-      "note": "Faint CME first seen by SOHO LASCO C2 beginning at 2026-03-10T04:48Z. This CME fades before exiting the field of view in SOHO LASCO C2 and is therefore not visible in SOHO LASCO C3, STEREO A COR2 or GOES CCOR-1. The source of this event is a small region of brightening with a small amount of ejecta seen in GOES SUVI 304 located at approx. N25E63 beginning at approx. 2026-03-10T04:17Z.",
-      "submissionTime": "2026-03-10T11:56Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45016/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-10T11:07Z",
-          "latitude": 27,
-          "longitude": -63,
-          "halfAngle": 20,
-          "speed": 550,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on approximate source location and best fit in SOHO LASCO C2.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-10T11:56Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45017/-1",
-          "enlilList": [
-            {
-              "modelCompletionTime": "2026-03-10T12:11Z",
-              "au": 2,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45020/-1",
-              "impactList": null,
-              "cmeIDs": [
-                "2026-03-10T04:48:00-CME-001"
-              ]
-            }
-          ]
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2026-03-10T10:45:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-10T10:45Z",
-      "instruments": [
-        {
-          "displayName": "GOES: CCOR-1"
-        },
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        },
-        {
-          "displayName": "STEREO A: SECCHI/COR2"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "CME first seen to the NW by GOES CCOR-1 beginning at 2026-03-10T10:45Z, as well as by SOHO LASCO C2/C3 and STEREO A COR2 in later frames. The source of this event was a far sided prominence eruption seen from beyond the NW limb in GOES SUVI 304. Field line opening is also visible in GUES SUVI 195 and 284. This eruption began at approx. 2026-03-10T07:30Z, but did not fully detach from the disk until approx. 2026-03-10T09:57Z.",
-      "submissionTime": "2026-03-10T15:05Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45018/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-10T18:34Z",
-          "latitude": 46,
-          "longitude": 97,
-          "halfAngle": 23,
-          "speed": 456,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on approximate source location and best fit in GOES CCOR-1 and STEREO A COR2.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-10T15:06Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45019/-1",
-          "enlilList": [
-            {
-              "modelCompletionTime": "2026-03-10T18:03Z",
-              "au": 2,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45026/-1",
-              "impactList": null,
-              "cmeIDs": [
-                "2026-03-10T10:45:00-CME-001"
-              ]
-            }
-          ]
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2026-03-10T12:24:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-10T12:24Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        }
-      ],
-      "sourceLocation": "N13E70",
-      "activeRegionNum": 14389,
-      "note": "Faint CME first seen to the Northeast by SOHO LASCO C2 beginning at 2026-03-10T12:24Z. This front fades very quickly and is therefore not visible in SOHO LASCO C3, STEREO A COR2 or GOES CCOR-1. The source of this event is a C2.4 flare from Active Region 14389 (N13E70) peaking at 2026-03-10T12:04Z as seen in GOES SUVI 131, along with field line opening seen in GOES SUVI 193 and 284. It appears that this eruption mostly fails and falls back towards the solar disk.",
-      "submissionTime": "2026-03-10T16:58Z",
-      "versionId": 2,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45022/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-11T10:33Z",
-          "latitude": 19,
-          "longitude": -70,
-          "halfAngle": 42,
-          "speed": 165,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on approximate source location and best fit in SOHO LASCO C2.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-10T16:41Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45023/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": [
-        {
-          "activityID": "2026-03-10T11:22:00-FLR-001"
-        }
-      ],
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2026-03-10T22:00:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-10T22:00Z",
-      "instruments": [
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "CME observed to the NW in GOES CCOR-1, no observations in real-time due to a STEREO A COR2 and SOHO LASCO C2/C3 data gap. The source for this CME is not directly observed, best observed as field line movement over the far-sided west limb starting around 2026-03-10T21:00Z in GOES SUVI 284. A second front at 2026-03-10T22:45Z in CCOR-1 is likely a slower bulk following an initial faster shock front, though without direct source observations and triangulation this is a somewhat speculative connection.",
-      "submissionTime": "2026-03-11T01:52Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45027/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-11T03:31Z",
-          "latitude": 27,
-          "longitude": null,
-          "halfAngle": 23,
-          "speed": 596,
-          "type": "C",
-          "featureCode": "SH",
-          "imageType": "running difference",
-          "measurementTechnique": "Plane-of-sky",
-          "note": "Shock front plane-of-sky with CCOR-1 only, due to unobserved source longitude and lack of STEREO A COR2 to triangulate.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-11T01:53Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45028/-1",
-          "enlilList": []
-        },
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-11T10:11Z",
-          "latitude": 22,
-          "longitude": null,
-          "halfAngle": 28,
-          "speed": 285,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "Plane-of-sky",
-          "note": "Bulk front plane-of-sky with CCOR-1 only, due to unobserved source longitude and lack of STEREO A COR2 to triangulate.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-11T01:53Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45029/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
     {
       "activityID": "2026-03-11T09:38:00-CME-001",
       "catalog": "M2M_CATALOG",
@@ -1719,6 +1422,886 @@
           "messageID": "20260316-AL-003",
           "messageIssueTime": "2026-03-16T23:47Z",
           "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45113/1"
+        }
+      ]
+    },
+    {
+      "activityID": "2026-03-16T15:24:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-03-16T15:24Z",
+      "instruments": [
+        {
+          "displayName": "SOHO: LASCO/C2"
+        },
+        {
+          "displayName": "SOHO: LASCO/C3"
+        },
+        {
+          "displayName": "GOES: CCOR-1"
+        }
+      ],
+      "sourceLocation": "N50W10",
+      "activeRegionNum": null,
+      "note": "Bright, slow CME first seen to the north in SOHO LASCO C2 beginning at 2026-03-16T15:24Z, as well as by SOHO LASCO C3 and GOES CCOR-1 in later frames. This event is not seen in STEREO A COR2 due to a data gap which began at 2026-03-16T14:53Z. The source of this event is faint dimming and field line movement seen in GOES SUVI 193/284 located at approx. N50W10 beginning at approx. 2026-03-16T14:00Z.",
+      "submissionTime": "2026-03-17T13:08Z",
+      "versionId": 2,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45123/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-03-17T10:51Z",
+          "latitude": 50,
+          "longitude": 2,
+          "halfAngle": 33,
+          "speed": 229,
+          "type": "S",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "SWPC_CAT",
+          "note": "Measurement based on source location.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": 10,
+          "submissionTime": "2026-03-17T13:09Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45124/-1",
+          "enlilList": []
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2026-03-17T05:08:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-03-17T05:08Z",
+      "instruments": [
+        {
+          "displayName": "STEREO A: SECCHI/COR2"
+        },
+        {
+          "displayName": "SOHO: LASCO/C2"
+        }
+      ],
+      "sourceLocation": "S15E10",
+      "activeRegionNum": 14392,
+      "note": "CME faintly seen to the SE in STEREO A COR2 and SOHO LASCO C2. The CME is not clearly visible in GOES CCOR-1 and is obscured by the pylon in SOHO LASCO C3. The potential source is a filament eruption with brightening starting at 2026-03-17T02:41Z from AR 14392 (approximately S15E10). The eruption is also visible near the SE limb from the point of view of STEREO A EUV 304 starting at 2026-03-17T03:45Z.",
+      "submissionTime": "2026-03-17T12:49Z",
+      "versionId": 1,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45121/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-03-17T13:42Z",
+          "latitude": -25,
+          "longitude": -27,
+          "halfAngle": 17,
+          "speed": 429,
+          "type": "S",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "SWPC_CAT",
+          "note": "Measurement based on the best fit between SOHO LASCO C2 and STEREO A COR2 imagery in SWPC_CAT.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": 9,
+          "submissionTime": "2026-03-17T12:50Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45122/-1",
+          "enlilList": [
+            {
+              "modelCompletionTime": "2026-03-17T13:17Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T08:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45125/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-18T16:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-21T00:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T13:42Z",
+              "au": 5.5,
+              "estimatedShockArrivalTime": "2026-03-20T08:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45126/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-18T16:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-21T00:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T16:09Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45132/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T16:18Z",
+              "au": 5.5,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45133/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T17:24Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45136/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001",
+                "2026-03-17T10:53:00-CME-001"
+              ]
+            }
+          ]
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2026-03-17T05:48:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-03-17T05:48Z",
+      "instruments": [
+        {
+          "displayName": "SOHO: LASCO/C2"
+        },
+        {
+          "displayName": "SOHO: LASCO/C3"
+        },
+        {
+          "displayName": "STEREO A: SECCHI/COR2"
+        },
+        {
+          "displayName": "GOES: CCOR-1"
+        }
+      ],
+      "sourceLocation": "N10E60",
+      "activeRegionNum": null,
+      "note": "Narrow CME visible to the NE in SOHO LASCO C2/C3, GOES CCOR-1, and STEREO A COR2. The potential source is a filament eruption around N10E60 starting around 2026-03-17T04:53Z in GOES-S SUVI 304. The eruption is also seen near the east limb from the point of view of STEREO A EUV 304 imagery.",
+      "submissionTime": "2026-03-17T11:51Z",
+      "versionId": 1,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45116/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-03-17T10:28Z",
+          "latitude": 19,
+          "longitude": -71,
+          "halfAngle": 10,
+          "speed": 630,
+          "type": "C",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "SWPC_CAT",
+          "note": "Measurement based on the source location as well as the best fit between SOHO LASCO C2/C3, GOES CCOR-1, and STEREO A COR2 in SWPC_CAT.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": 11.5,
+          "submissionTime": "2026-03-17T11:52Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45117/-1",
+          "enlilList": [
+            {
+              "modelCompletionTime": "2026-03-17T12:29Z",
+              "au": 2,
+              "estimatedShockArrivalTime": null,
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": null,
+              "kp_135": null,
+              "kp_180": null,
+              "isEarthGB": false,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45120/-1",
+              "impactList": null,
+              "cmeIDs": [
+                "2026-03-17T05:48:00-CME-001"
+              ]
+            }
+          ]
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2026-03-17T06:38:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-03-17T06:38Z",
+      "instruments": [
+        {
+          "displayName": "STEREO A: SECCHI/COR2"
+        }
+      ],
+      "sourceLocation": "S20E05",
+      "activeRegionNum": null,
+      "note": "Narrow CME seen to the east in STEREO A COR2. Not visible in SOHO LASCO C2/C3 or GOES CCOR-1 imagery. The potential source is an eruption with dimming and opening field lines starting around 2026-03-17T03:55Z as seen on the SE limb in STEREO A EUV 195 imagery. This is similar to the source eruption associated with CME: 2026-03-17T05:08Z, which overlaps in the field of view of the coronagraph, but there may be two eruptions associated with this event. The eruption can also be seen as dimming in GOES-Secondary SUVI 195 imagery, centered around S20E05.",
+      "submissionTime": "2026-03-17T15:27Z",
+      "versionId": 1,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45127/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-03-17T12:54Z",
+          "latitude": -9,
+          "longitude": 3,
+          "halfAngle": 13,
+          "speed": 470,
+          "type": "S",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "SWPC_CAT",
+          "note": "Measurement based on the potential source location. The CME is not visible in SOHO LASCO C2/C3 or GOES CCOR-1 imagery, and leading to additional uncertainty about the accuracy of the source location.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": 11,
+          "submissionTime": "2026-03-17T15:28Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45128/-1",
+          "enlilList": [
+            {
+              "modelCompletionTime": "2026-03-17T16:09Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45132/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T16:18Z",
+              "au": 5.5,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45133/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T17:24Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45136/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001",
+                "2026-03-17T10:53:00-CME-001"
+              ]
+            }
+          ]
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2026-03-17T08:23:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-03-17T08:23Z",
+      "instruments": [
+        {
+          "displayName": "STEREO A: SECCHI/COR2"
+        },
+        {
+          "displayName": "SOHO: LASCO/C2"
+        }
+      ],
+      "sourceLocation": "S05W15",
+      "activeRegionNum": null,
+      "note": "CME visible to the SE in STEREO A COR2. The CME may also faintly be seen to the west in early frames of SOHO LASCO C2 imagery. It is not clearly visible in GOES CCOR-1 or STEREO A COR2 imagery. The potential source is a filament eruption with liftoff seen starting around 2026-03-17T05:15Z in the southeast of STEREO A EUV 304. The filament liftoff is also visible in GOES SUVI 304 imagery, centered around S05W15.",
+      "submissionTime": "2026-03-17T12:25Z",
+      "versionId": 1,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45118/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-03-17T15:28Z",
+          "latitude": -6,
+          "longitude": 14,
+          "halfAngle": 17,
+          "speed": 434,
+          "type": "S",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "SWPC_CAT",
+          "note": "Measurement based on the best fit between STEREO A COR2 and SOHO LASCO C2 in SWPC_CAT as well as the potential source location.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": 12.8,
+          "submissionTime": "2026-03-17T12:26Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45119/-1",
+          "enlilList": [
+            {
+              "modelCompletionTime": "2026-03-17T13:17Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T08:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45125/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-18T16:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-21T00:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T13:42Z",
+              "au": 5.5,
+              "estimatedShockArrivalTime": "2026-03-20T08:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45126/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-18T16:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-21T00:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T16:09Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45132/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T16:18Z",
+              "au": 5.5,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45133/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T17:24Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45136/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001",
+                "2026-03-17T10:53:00-CME-001"
+              ]
+            }
+          ]
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2026-03-17T10:53:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-03-17T10:53Z",
+      "instruments": [
+        {
+          "displayName": "STEREO A: SECCHI/COR2"
+        }
+      ],
+      "sourceLocation": "S14E10",
+      "activeRegionNum": 14392,
+      "note": "Narrow CME visible to the southeast in STEREO A COR2. The CME is not visible in GOES CCOR-1 or SOHO LASCO C2/C3 imagery. The source may be an M1.3 flare starting at 2026-03-17T08:55Z seen in GOES-Secondary SUVI 131 imagery. Dimming and moving field lines can be seen in GOES SUVI 195 around S14E10 and in STEREO A EUV 195 near the southeast limb.",
+      "submissionTime": "2026-03-17T15:37Z",
+      "versionId": 2,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45129/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-03-17T22:31Z",
+          "latitude": -14,
+          "longitude": -10,
+          "halfAngle": 10,
+          "speed": 287,
+          "type": "S",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "SWPC_CAT",
+          "note": "Measurement based on the potential source location using STEREO A COR2 imagery only.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": 9.3,
+          "submissionTime": "2026-03-17T15:37Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45130/-1",
+          "enlilList": [
+            {
+              "modelCompletionTime": "2026-03-17T16:46Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T18:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45134/-1",
+              "impactList": null,
+              "cmeIDs": [
+                "2026-03-17T10:53:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T17:24Z",
+              "au": 2,
+              "estimatedShockArrivalTime": "2026-03-20T06:00Z",
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": 3,
+              "kp_135": 4,
+              "kp_180": 5,
+              "isEarthGB": true,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45136/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-19T03:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-20T22:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T06:38:00-CME-001",
+                "2026-03-17T05:08:00-CME-001",
+                "2026-03-17T08:23:00-CME-001",
+                "2026-03-17T10:53:00-CME-001"
+              ]
+            }
+          ]
+        }
+      ],
+      "linkedEvents": [
+        {
+          "activityID": "2026-03-17T08:55:00-FLR-001"
+        }
+      ],
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2026-03-17T16:53:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-03-17T16:53Z",
+      "instruments": [
+        {
+          "displayName": "STEREO A: SECCHI/COR2"
+        },
+        {
+          "displayName": "SOHO: LASCO/C2"
+        }
+      ],
+      "sourceLocation": "",
+      "activeRegionNum": null,
+      "note": "Faint, less than 10 degree half-width CME, observed best to the E in STEREO A COR2 and faintly to the W in SOHO LASCO C2, before fading and not visible in LASCO C3 and GOES CCOR-1. No on-disk source is observed, with the analysis triangulating to S07W23, decently far from the more active AR 14392 (S16E06) for any potential deflection.",
+      "submissionTime": "2026-03-17T22:36Z",
+      "versionId": 1,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45138/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-03-17T22:53Z",
+          "latitude": -7,
+          "longitude": 23,
+          "halfAngle": 10,
+          "speed": 508,
+          "type": "C",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "SWPC_CAT",
+          "note": "Triangulation between STEREO A COR2 and faint frames of the front in SOHO LASCO C2. CME half width is less than 10 degrees, perhaps around 5 degrees, limited by the 10 degree half-width minimum in swpc_cat.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": null,
+          "submissionTime": "2026-03-17T22:37Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45139/-1",
+          "enlilList": [
+            {
+              "modelCompletionTime": "2026-03-17T23:07Z",
+              "au": 2,
+              "estimatedShockArrivalTime": null,
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": null,
+              "kp_135": null,
+              "kp_180": null,
+              "isEarthGB": false,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45140/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-18T20:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-21T04:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T16:53:00-CME-001"
+              ]
+            },
+            {
+              "modelCompletionTime": "2026-03-17T23:16Z",
+              "au": 5.5,
+              "estimatedShockArrivalTime": null,
+              "estimatedDuration": null,
+              "rmin_re": null,
+              "kp_18": null,
+              "kp_90": null,
+              "kp_135": null,
+              "kp_180": null,
+              "isEarthGB": false,
+              "isEarthMinorImpact": false,
+              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45141/-1",
+              "impactList": [
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "BepiColombo",
+                  "arrivalTime": "2026-03-18T20:00Z"
+                },
+                {
+                  "isGlancingBlow": true,
+                  "isMinorImpact": false,
+                  "location": "OSIRIS-APEX",
+                  "arrivalTime": "2026-03-21T04:00Z"
+                }
+              ],
+              "cmeIDs": [
+                "2026-03-17T16:53:00-CME-001"
+              ]
+            }
+          ]
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": [
+        {
+          "messageID": "20260318-AL-001",
+          "messageIssueTime": "2026-03-18T00:25Z",
+          "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45142/1"
         }
       ]
     }

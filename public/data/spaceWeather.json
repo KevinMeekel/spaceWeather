@@ -210,405 +210,83 @@
         }
       ],
       "sentNotifications": null
+    },
+    {
+      "flrID": "2026-04-03T07:45:00-FLR-001",
+      "catalog": "M2M_CATALOG",
+      "instruments": [
+        {
+          "displayName": "GOES-P: EXIS 1.0-8.0"
+        }
+      ],
+      "beginTime": "2026-04-03T07:45Z",
+      "peakTime": "2026-04-03T07:56Z",
+      "endTime": "2026-04-03T07:58Z",
+      "classType": "M1.3",
+      "sourceLocation": "N02E07",
+      "activeRegionNum": 14409,
+      "note": "",
+      "submissionTime": "2026-04-03T08:13Z",
+      "versionId": 1,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/FLR/45527/-1",
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "flrID": "2026-04-03T12:46:00-FLR-001",
+      "catalog": "M2M_CATALOG",
+      "instruments": [
+        {
+          "displayName": "GOES-P: EXIS 1.0-8.0"
+        }
+      ],
+      "beginTime": "2026-04-03T12:46Z",
+      "peakTime": "2026-04-03T12:50Z",
+      "endTime": "2026-04-03T12:52Z",
+      "classType": "M1.3",
+      "sourceLocation": "N02E04",
+      "activeRegionNum": 14409,
+      "note": "",
+      "submissionTime": "2026-04-03T14:06Z",
+      "versionId": 3,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/FLR/45532/-1",
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "flrID": "2026-04-04T01:07:00-FLR-001",
+      "catalog": "M2M_CATALOG",
+      "instruments": [
+        {
+          "displayName": "GOES-P: EXIS 1.0-8.0"
+        }
+      ],
+      "beginTime": "2026-04-04T01:07Z",
+      "peakTime": "2026-04-04T01:17Z",
+      "endTime": "2026-04-04T01:23Z",
+      "classType": "M7.5",
+      "sourceLocation": "N02W02",
+      "activeRegionNum": 14409,
+      "note": "",
+      "submissionTime": "2026-04-04T01:32Z",
+      "versionId": 3,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/FLR/45538/-1",
+      "linkedEvents": null,
+      "sentNotifications": [
+        {
+          "messageID": "20260404-AL-001",
+          "messageIssueTime": "2026-04-04T01:19Z",
+          "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45539/1"
+        },
+        {
+          "messageID": "20260404-AL-002",
+          "messageIssueTime": "2026-04-04T01:26Z",
+          "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45540/1"
+        }
+      ]
     }
   ],
   "cmes": [
-    {
-      "activityID": "2026-03-27T01:26:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-27T01:26Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        },
-        {
-          "displayName": "STEREO A: SECCHI/COR2"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "This CME is visible to the southeast in SOHO LASCO C2/C3, GOES CCOR-1, and STEREO A COR2 imagery. The source is an eruption observed near the southeast limb starting around 2026-03-27T00:40Z as seen in GOES SUVI 131/171/195/294/304 imagery. An opening of field lines can be seen over the southeast limb at this time in GOES SUVI 171/195/284 imagery and post-eruptive arcades are visible on the southeast limb starting around 2026-03-27T01:00Z in GOES SUVI 131/171/195/304 imagery.",
-      "submissionTime": "2026-03-27T12:07Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45339/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-27T06:51Z",
-          "latitude": -29,
-          "longitude": -92,
-          "halfAngle": 35,
-          "speed": 719,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on the approximate source location and best fit between SOHO LASCO C3 and STEREO A COR2 imagery.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 15.8,
-          "submissionTime": "2026-03-27T12:09Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45340/-1",
-          "enlilList": [
-            {
-              "modelCompletionTime": "2026-03-27T12:26Z",
-              "au": 2,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45345/-1",
-              "impactList": null,
-              "cmeIDs": [
-                "2026-03-27T01:26:00-CME-001"
-              ]
-            },
-            {
-              "modelCompletionTime": "2026-03-27T12:55Z",
-              "au": 5.5,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45347/-1",
-              "impactList": [
-                {
-                  "isGlancingBlow": true,
-                  "isMinorImpact": false,
-                  "location": "Juno",
-                  "arrivalTime": "2026-04-12T12:00Z"
-                }
-              ],
-              "cmeIDs": [
-                "2026-03-27T01:26:00-CME-001"
-              ]
-            },
-            {
-              "modelCompletionTime": "2026-03-27T13:57Z",
-              "au": 2,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45350/-1",
-              "impactList": null,
-              "cmeIDs": [
-                "2026-03-27T01:26:00-CME-001",
-                "2026-03-27T08:24:00-CME-001"
-              ]
-            },
-            {
-              "modelCompletionTime": "2026-03-27T14:23Z",
-              "au": 5.5,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45351/-1",
-              "impactList": [
-                {
-                  "isGlancingBlow": false,
-                  "isMinorImpact": true,
-                  "location": "Juno",
-                  "arrivalTime": "2026-04-11T12:00Z"
-                }
-              ],
-              "cmeIDs": [
-                "2026-03-27T01:26:00-CME-001",
-                "2026-03-27T08:24:00-CME-001"
-              ]
-            }
-          ]
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": [
-        {
-          "messageID": "20260327-AL-001",
-          "messageIssueTime": "2026-03-27T15:24Z",
-          "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45352/1"
-        }
-      ]
-    },
-    {
-      "activityID": "2026-03-27T08:24:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-27T08:24Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "S22E80",
-      "activeRegionNum": null,
-      "note": "This CME is visible to the southeast in SOHO LASCO C2/C3 and GOES CCOR-1 imagery. This event is not observed in STEREO A COR2 imagery. The source is likely related to an eruption on the southeast limb (centered near S22E80) starting around 2026-03-27T07:00Z as seen in GOES SUVI 131/195/304 imagery.",
-      "submissionTime": "2026-03-27T12:11Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45341/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-27T13:59Z",
-          "latitude": -22,
-          "longitude": -80,
-          "halfAngle": 29,
-          "speed": 609,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on the source location. Since this event is not visible in STEREO A COR2 and a triangulated measurement is therefore not possible, the measured parameters may vary slightly.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 10.4,
-          "submissionTime": "2026-03-27T12:13Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45342/-1",
-          "enlilList": [
-            {
-              "modelCompletionTime": "2026-03-27T13:10Z",
-              "au": 2,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45348/-1",
-              "impactList": null,
-              "cmeIDs": [
-                "2026-03-27T08:24:00-CME-001"
-              ]
-            },
-            {
-              "modelCompletionTime": "2026-03-27T13:42Z",
-              "au": 5.5,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45349/-1",
-              "impactList": [
-                {
-                  "isGlancingBlow": true,
-                  "isMinorImpact": false,
-                  "location": "Juno",
-                  "arrivalTime": "2026-04-14T06:00Z"
-                }
-              ],
-              "cmeIDs": [
-                "2026-03-27T08:24:00-CME-001"
-              ]
-            },
-            {
-              "modelCompletionTime": "2026-03-27T13:57Z",
-              "au": 2,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45350/-1",
-              "impactList": null,
-              "cmeIDs": [
-                "2026-03-27T01:26:00-CME-001",
-                "2026-03-27T08:24:00-CME-001"
-              ]
-            },
-            {
-              "modelCompletionTime": "2026-03-27T14:23Z",
-              "au": 5.5,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45351/-1",
-              "impactList": [
-                {
-                  "isGlancingBlow": false,
-                  "isMinorImpact": true,
-                  "location": "Juno",
-                  "arrivalTime": "2026-04-11T12:00Z"
-                }
-              ],
-              "cmeIDs": [
-                "2026-03-27T01:26:00-CME-001",
-                "2026-03-27T08:24:00-CME-001"
-              ]
-            }
-          ]
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": [
-        {
-          "messageID": "20260327-AL-001",
-          "messageIssueTime": "2026-03-27T15:24Z",
-          "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45352/1"
-        }
-      ]
-    },
-    {
-      "activityID": "2026-03-27T19:36:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-27T19:36Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "Faint CME visible to the SW in SOHO LASCO C2/C3 and GOES CCOR-1. There is a data gap in STEREO A COR2 for this event. The possible source of this CME is seen as moving/opening field lines along the W limb as seen in GOES SUVI 304 starting around 2026-03-27T18:56Z.",
-      "submissionTime": "2026-03-28T00:20Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45353/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-27T23:35Z",
-          "latitude": -29,
-          "longitude": null,
-          "halfAngle": 22,
-          "speed": 823,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "Plane-of-sky",
-          "note": "Plane-of-sky parameters based on best fit of faint front in SOHO LASCO C2/C3 and GOES CCOR-1 imagery.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 9.2,
-          "submissionTime": "2026-03-28T00:22Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45354/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2026-03-27T23:12:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-27T23:12Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "S35E35",
-      "activeRegionNum": null,
-      "note": "Faint CME visible to the SE in SOHO LASCO C2/C3 and GOES CCOR-1. The CME is partially obscured by the pylon in SOHO LASCO C3. Not visible in STEREO A COR2 due to a data gap starting at 2026-03-27T16:53Z. The potential source is a filament eruption starting around 2026-03-27T20:36Z centered around S35E35 as seen in GOES SUVI 195/304.",
-      "submissionTime": "2026-03-28T13:14Z",
-      "versionId": 1,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45361/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-28T07:23Z",
-          "latitude": -29,
-          "longitude": -35,
-          "halfAngle": 25,
-          "speed": 417,
-          "type": "S",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Measurement based on the potential source location.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": 9.1,
-          "submissionTime": "2026-03-28T13:15Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45362/-1",
-          "enlilList": [
-            {
-              "modelCompletionTime": "2026-03-28T13:51Z",
-              "au": 2,
-              "estimatedShockArrivalTime": null,
-              "estimatedDuration": null,
-              "rmin_re": null,
-              "kp_18": null,
-              "kp_90": null,
-              "kp_135": null,
-              "kp_180": null,
-              "isEarthGB": false,
-              "isEarthMinorImpact": false,
-              "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/WSA-ENLIL/45365/-1",
-              "impactList": null,
-              "cmeIDs": [
-                "2026-03-27T23:12:00-CME-001"
-              ]
-            }
-          ]
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
     {
       "activityID": "2026-03-28T01:26:00-CME-001",
       "catalog": "M2M_CATALOG",
@@ -3142,6 +2820,12 @@
       "linkedEvents": [
         {
           "activityID": "2026-04-01T23:08:00-FLR-001"
+        },
+        {
+          "activityID": "2026-04-03T15:00:00-GST-001"
+        },
+        {
+          "activityID": "2026-04-03T15:02:00-IPS-001"
         }
       ],
       "sentNotifications": [
@@ -3748,6 +3432,50 @@
           "messageID": "20260402-AL-004",
           "messageIssueTime": "2026-04-02T18:16Z",
           "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45513/1"
+        }
+      ]
+    },
+    {
+      "gstID": "2026-04-03T15:00:00-GST-001",
+      "startTime": "2026-04-03T15:00Z",
+      "allKpIndex": [
+        {
+          "observedTime": "2026-04-03T18:00Z",
+          "kpIndex": 6.67,
+          "source": "NOAA"
+        },
+        {
+          "observedTime": "2026-04-03T21:00Z",
+          "kpIndex": 5.67,
+          "source": "NOAA"
+        },
+        {
+          "observedTime": "2026-04-04T00:00Z",
+          "kpIndex": 5.67,
+          "source": "NOAA"
+        }
+      ],
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/GST/45535/-1",
+      "linkedEvents": [
+        {
+          "activityID": "2026-04-01T23:45:00-CME-001"
+        },
+        {
+          "activityID": "2026-04-03T15:02:00-IPS-001"
+        }
+      ],
+      "submissionTime": "2026-04-03T18:02Z",
+      "versionId": 1,
+      "sentNotifications": [
+        {
+          "messageID": "20260403-AL-004",
+          "messageIssueTime": "2026-04-03T18:02Z",
+          "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45536/1"
+        },
+        {
+          "messageID": "20260403-AL-005",
+          "messageIssueTime": "2026-04-03T18:17Z",
+          "messageURL": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/Alert/45537/1"
         }
       ]
     }

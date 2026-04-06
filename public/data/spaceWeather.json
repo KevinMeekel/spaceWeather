@@ -301,101 +301,6 @@
   ],
   "cmes": [
     {
-      "activityID": "2026-03-29T05:12:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-29T05:12Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "SOHO: LASCO/C3"
-        },
-        {
-          "displayName": "STEREO A: SECCHI/COR2"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "",
-      "activeRegionNum": null,
-      "note": "Very faint and narrow CME to the SE seen in SOHO LASCO C2/C3 and in GOES CCOR-1 and STEREO A COR2. No clear source for it has been found in GOES SUVI imagery.",
-      "submissionTime": "2026-03-31T00:32Z",
-      "versionId": 2,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45385/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-29T12:01Z",
-          "latitude": -37,
-          "longitude": -68,
-          "halfAngle": 10,
-          "speed": 515,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Approximate analysis based on the fit of this very faint front in all three coronagraphs, \nSOHO LASCO C2/C3, STEREO A COR2 and GOES CCOR-1. No source has been found in the GOES SUVI EUV imagery to confirm this analysis.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-29T17:30Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45386/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
-      "activityID": "2026-03-29T11:12:00-CME-001",
-      "catalog": "M2M_CATALOG",
-      "startTime": "2026-03-29T11:12Z",
-      "instruments": [
-        {
-          "displayName": "SOHO: LASCO/C2"
-        },
-        {
-          "displayName": "STEREO A: SECCHI/COR2"
-        },
-        {
-          "displayName": "GOES: CCOR-1"
-        }
-      ],
-      "sourceLocation": "S35E55",
-      "activeRegionNum": null,
-      "note": "Very faint minor CME seen to the SE seen in SOHO LASCO C2, STEREO A COR2 and GOES CCOR-1. No clear source has been found for this very faint minor CME in EUV imagery, however there is a very minor dimming at ~(S35E55) seen in GOES SUVI 195 imagery, tentatively confirming the analysis based on the fit of the front of the CME in SOHO LASCO and STEREO A coronagraphs.",
-      "submissionTime": "2026-03-29T18:19Z",
-      "versionId": 2,
-      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45390/-1",
-      "cmeAnalyses": [
-        {
-          "isMostAccurate": true,
-          "time21_5": "2026-03-29T17:54Z",
-          "latitude": -31,
-          "longitude": -66,
-          "halfAngle": 10,
-          "speed": 505,
-          "type": "C",
-          "featureCode": "LE",
-          "imageType": "running difference",
-          "measurementTechnique": "SWPC_CAT",
-          "note": "Approximate analysis based on the fit of this very faint, narrow front in all three coronagraphs (SOHO LASCO C2/C3, STEREO A COR2 and GOES CCOR-1). No clear source has been found for this very faint minor CME in EUV imagery, however there is a very minor dimming at ~(S35E55) seen in GOES SUVI 195 imagery, tentatively confirming the analysis based on the fit of the front of the CME in SOHO LASCO and STEREO A coronagraphs.",
-          "levelOfData": 0,
-          "tilt": null,
-          "minorHalfWidth": null,
-          "speedMeasuredAtHeight": null,
-          "submissionTime": "2026-03-29T18:19Z",
-          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45391/-1",
-          "enlilList": []
-        }
-      ],
-      "linkedEvents": null,
-      "sentNotifications": null
-    },
-    {
       "activityID": "2026-03-30T03:24:00-CME-001",
       "catalog": "M2M_CATALOG",
       "startTime": "2026-03-30T03:24Z",
@@ -2298,6 +2203,9 @@
           "activityID": "2026-04-01T23:08:00-FLR-001"
         },
         {
+          "activityID": "2026-04-03T09:05:00-RBE-001"
+        },
+        {
           "activityID": "2026-04-03T15:00:00-GST-001"
         },
         {
@@ -2957,6 +2865,52 @@
           "speedMeasuredAtHeight": 5.9,
           "submissionTime": "2026-04-04T10:04Z",
           "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45543/-1",
+          "enlilList": []
+        }
+      ],
+      "linkedEvents": null,
+      "sentNotifications": null
+    },
+    {
+      "activityID": "2026-04-05T01:48:00-CME-001",
+      "catalog": "M2M_CATALOG",
+      "startTime": "2026-04-05T01:48Z",
+      "instruments": [
+        {
+          "displayName": "SOHO: LASCO/C2"
+        },
+        {
+          "displayName": "SOHO: LASCO/C3"
+        },
+        {
+          "displayName": "GOES: CCOR-1"
+        }
+      ],
+      "sourceLocation": "",
+      "activeRegionNum": null,
+      "note": "CME first seen to the SE in GOES CCOR-1 starting at 2026-04-05T02:15Z. The start of it is it likely covered by real-time data gap in STEREO A COR2 but even after the data gap it is not seen in COR2, indicating far-sidedness. There is some extremely faint field line movement beyond SE limb starting around 2026-04-05T00:20Z best seen in GOES SUVI 284, which might be the indication of a very far sided source.",
+      "submissionTime": "2026-04-05T12:40Z",
+      "versionId": 4,
+      "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CME/45551/-1",
+      "cmeAnalyses": [
+        {
+          "isMostAccurate": true,
+          "time21_5": "2026-04-05T07:08Z",
+          "latitude": -24,
+          "longitude": null,
+          "halfAngle": 16,
+          "speed": 641,
+          "type": "C",
+          "featureCode": "LE",
+          "imageType": "running difference",
+          "measurementTechnique": "Plane-of-sky",
+          "note": "Final plane-of-sky measurement based on SOHO LASCO and GOES CCOR-1. The CME is not seen in STEREO A COR2 after the initial data gap. No clear sourse has been found for it in EUV imagery, so it is likely far sided.",
+          "levelOfData": 0,
+          "tilt": null,
+          "minorHalfWidth": null,
+          "speedMeasuredAtHeight": 13,
+          "submissionTime": "2026-04-05T12:39Z",
+          "link": "https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/CMEAnalysis/45552/-1",
           "enlilList": []
         }
       ],
